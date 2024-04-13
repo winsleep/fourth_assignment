@@ -1,0 +1,22 @@
+h1{
+    color: brown;
+}
+
+
+.write {
+    text-align: center;
+}
+
+.write_content{
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(216, 14, 14);
+    text-align: center;
+    padding: 10px;
+    margin: 10px 10px;
+    text-decoration: none;
+    color:cornflowerblue;
+    border-radius: 50px;
+
+}
+

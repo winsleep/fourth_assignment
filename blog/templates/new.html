@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load static %} 
+{% block title %}
+new 글
+{% endblock title%}
+{% block extrahead %}
+<link rel="stylesheet" href="{% static 'blog/css/new.css'%}">
+{% endblock extrahead %}
+{% block content %}
+<div class = write>
+    <h1>새 글 작성하기</h1>
+    <div class = write_content>
+        <form action="{%url 'create'%}" method="POST" enctype = 'multipart/form-data'>
+        {% csrf_token %}
+        제목 : <input type="text" name="title" />
+        본문 : <textarea name="content" id="" cols="30" rows="10"></textarea>
+        사진 : <input type = "file" name = "image">
+        <input type="submit" value="작성하기"/>
+        </form>
+    </div>
+</div>
+{% endblock content %}
+
